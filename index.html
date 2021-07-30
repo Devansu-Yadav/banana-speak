@@ -5,14 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Speak</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
 <body>
-    <h1>Banana Talk!!</h1>
-    <textarea id="input-text" placeholder="Enter text to be translated"></textarea>
-    <button id="translate">Translate</button>
-    <div class="output">
-        <textarea id="output-text" placeholder="Translated text goes here!"></textarea>
-    </div>
+    <nav class="navigation container">
+        <div class="heading">
+            <a class="link" href="">
+                <h1 id="heading-name">Talk Banana🍌</h1>
+            </a>
+        </div>
+    </nav>
+
+    <section class="section-github">
+        <div class="source-code">
+            <div class="github">
+                <a class="link" href="https://github.com/Devansu-Yadav/banana-speak">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <header class="hero-container">
+        <div class="hero">
+            <div>
+                <h1 id="header-name">BELLO</h1>
+            </div>
+
+            <div id="hero-image">
+                <img src="./assets/minions.png"/>
+            </div>
+        </div>
+        <h2 id="sub-heading">
+            Welcome to Talk Banana🍌
+        </h2>
+        <p id="translate-msg">
+            Translate your message to Banana language.
+        </p>
+    </header>
+
+    <section class="translate-input container">
+        <div class="translate-banana">
+            <div class="input">Input your text here 👇</div>
+            <textarea id="input-text" placeholder="Enter text to be translated"></textarea>
+            <button id="translate">Translate</button>
+            <div class="output-text">Translated text will come here👇</div>
+            <div class="output"></div>
+        </div>
+    </section>
+    
     <script type="text/javascript" src="app.js"></script>
+
+    <footer class="footer">
+        <div class="footer-content container-center">
+            <p>Made with ❤️ by <a class="footer-link" href="https://github.com/Devansu-Yadav">Devansu Yadav</a></p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+:root {
+    --primary-color: #ffdf00;
+    --github-icon-color: black;
+    --input-output-msg: #9CA3AF;
+    --border-color: black;
+    --text-color: #374151;
+    --output-bg-color: #F9FAFB;
+    --output-border: #D1D5DB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/** Body **/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/** Containers **/
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 700px;
+    margin: auto;
+}
+
+/** Links **/
+.link {
+    text-decoration: none;
+    color: var(--github-icon-color);
+}
+/* Navigation Bar */
+.navigation {
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+}
+
+.navigation .heading {
+    text-align: center;
+}
+
+.heading a #heading-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+/* Responsive CSS for Navigation Bar */
+@media only screen and (max-width: 370px) {
+    .heading a #heading-name {
+        font-size: 1.5rem;
+    }
+}
+
+/** Section for Source Code **/
+.section-github {
+    padding: 0.5rem 1rem;
+}
+
+.section-github .source-code {
+    margin-left: auto;
+    width: fit-content;
+    padding: 0.5rem;
+    margin-right: 2rem;
+}
+
+.source-code .github {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.github a .fa-github {
+    font-size: 2rem;
+}
+
+/* Responsive CSS for Source Code section */
+@media only screen and (max-width: 470px) {
+    .section-github .source-code  {
+        margin-right: 1rem;
+    }
+}
+
+/** Header **/
+.hero-container {
+    padding: 0rem 4rem;
+    margin: 1rem 1rem;
+}
+
+.hero {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.hero #hero-image {
+    margin-top: -2rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0rem;
+}
+
+#hero-image img{
+    height: 410px;
+    width: 400px;
+}
+
+.hero #header-name {
+    font-size: 7.5rem;
+    font-weight: 900;
+    color: var(--primary-color);
+    height: auto;
+    margin-bottom: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-container #sub-heading {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hero-container #translate-msg {
+    text-align: center;
+    padding: 0.5rem 0rem;
+    font-size: 1.5rem;
+}
+
+/** Responsive CSS for Hero section **/
+@media only screen and (max-width: 675px) {
+    .hero #header-name {
+        font-size: 6.5rem;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #hero-image img{
+        height: 310px;
+        width: 300px;
+    }
+
+    .hero-container {
+        padding: 0rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 432px) {
+    .hero-container {
+        padding: 0rem 1rem;
+    }
+    
+    .hero #header-name {
+        font-size: 5rem;
+    }
+
+    #hero-image img{
+        height: 280px;
+        width: 270px;
+    }
+
+    .hero-container #sub-heading {
+        font-size: 1.4rem;
+    }
+
+    .hero-container #translate-msg {
+        font-size: 1.3rem;
+    }
+}
+
+/** Translation **/
+.translate-input {
+    background: linear-gradient(165deg, white 53%, var(--primary-color) 47%);
+}
+
+.translate-banana {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    margin: 0rem auto;
+}
+
+.input {
+    color: var(--input-output-msg);
+    margin: 2rem 0rem 1rem 0rem;
+    font-size: 1.5rem;
+}
+
+.translate-banana #input-text {
+    width: 80%;
+    height: 30vh;
+    display: block;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 1px solid var(--output-border);
+    box-shadow: 2px 3px var(--input-output-msg);
+}
+
+.translate-banana #translate {
+    width: 20%;
+    height: 8vh;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin: 1.5rem 0rem;
+}
+
+.translate-banana .output-text {
+    color: var(--border-color);
+    margin: 1.7rem 0rem 1rem 0rem;
+    font-size: 1.5rem;
+}
+
+.translate-banana .output {
+    box-sizing: border-box;
+    width: 85%;
+    height: 34vh;
+    border: 1px solid var(--border-color);
+    margin: 1rem 0rem 2rem 0rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background-color: var(--output-bg-color);
+    border: 1px solid var(--output-border);
+    box-shadow: 2px 3px var(--input-output-msg);
+}
+
+/* Responsive CSS for Translate section */
+@media only screen and (max-width: 900px) {
+    .translate-banana {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .translate-banana {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .translate-banana {
+        width: 400px;
+    }
+
+    .translate-banana #translate {
+        width: 25%;
+        font-size: 1.1rem;
+    }
+
+    .translate-banana .output-text {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 432px) {
+    .translate-banana {
+        width: 300px;
+    }
+
+    .input {
+        font-size: 1.2rem;
+    }
+    
+    .translate-banana #input-text {
+        height: 20vh;
+    }
+
+    .translate-banana #translate {
+        width: 30%;
+        font-size: 1rem;
+    }
+
+    .translate-banana .output-text {
+        font-size: 1.1rem;
+    }
+
+    .translate-banana .output {
+        height: 28vh;
+        margin-bottom: 1rem;
+    }
+}
+
+/** Footer **/
+.footer {
+    background-color: var(--primary-color);
+    color: var(--border-color);
+    padding: 0.5rem 0rem;
+    text-align: center;
+}
+
+.footer .footer-link {
+    color:var(--border-color);
+}
+
+.footer .footer-content {
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 1.2rem;
+    margin: 0.5rem 1rem;
+}
+
+/** Responsive CSS for footer **/
+@media only screen and (max-width: 350px) { 
+    .footer-content p {
+        font-size: 0.9rem;
+    }
+}
