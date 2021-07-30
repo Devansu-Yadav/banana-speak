@@ -212,9 +212,9 @@ body {
 }
 
 .translate-banana #translate {
-    width: 20%;
+    width: 30%;
     height: 8vh;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     border-radius: 0.5rem;
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -259,8 +259,8 @@ body {
     }
 
     .translate-banana #translate {
-        width: 25%;
-        font-size: 1.1rem;
+        width: 35%;
+        font-size: 1.3rem;
     }
 
     .translate-banana .output-text {
@@ -282,7 +282,7 @@ body {
     }
 
     .translate-banana #translate {
-        width: 30%;
+        width: 45%;
         font-size: 1rem;
     }
 

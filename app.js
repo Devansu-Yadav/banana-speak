@@ -16,7 +16,7 @@ function errorHandler(error) {
 function clickEventHandler() {
     fetch(getURL())
     .then(response => response.json())
-    .then(data => output_text.innerText = "Translated text: " + data.contents.translated)
+    .then(data => output_text.innerText = data.contents.translated)
     .catch(errorHandler);
 };
 
